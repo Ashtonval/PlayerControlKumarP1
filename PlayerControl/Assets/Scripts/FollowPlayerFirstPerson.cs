@@ -8,10 +8,13 @@ public class FollowPlayerFirstPerson : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             FirstPerson.SetActive(true);
         }
-        else()
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            FirstPerson.SetActive(false);
+        }
     }
 }
